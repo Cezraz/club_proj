@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FoodOrderingApp">
+    <Style x:Key="SectionStyle" TargetType="local:CBSection">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CBSection">
+                    <Border x:Name="rbBack"
+                            Background="#e9e9e9" 
+                            CornerRadius="10" 
+                            BorderBrush="Gray" 
+                            BorderThickness="1"
+                            Width="200"
+                            Height="40"
+                            Margin="0 5 30 5">
+                        <Label Content="{TemplateBinding Content}"
+                               FontSize="18"
+                               Foreground="#DD000000" 
+                               Width="Auto" Height="30"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                        <Border.Effect>
+                            <DropShadowEffect x:Name="cardShadow" Color="Gray" Opacity="0.5" />
+                        </Border.Effect>
+                        <Border.Triggers>
+                            <EventTrigger RoutedEvent="Border.MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="cardShadow" 
+                                         Storyboard.TargetProperty="Opacity" 
+                                         To="0.8" 
+                                         Duration="0:0:0.25"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="Border.MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="cardShadow" 
+                                         Storyboard.TargetProperty="Opacity" 
+                                         To="0.5" 
+                                         Duration="0:0:0.25"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Border.Triggers>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="rbBack" Property="Background" Value="LightGray"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter TargetName="rbBack" Property="Background" Value="#e9e9e9"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
