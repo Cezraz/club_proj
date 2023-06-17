@@ -1,0 +1,448 @@
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe.config
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Branirovanie.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\AngleSharp.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\AutoFixture.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\ControlzEx.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Fare.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MySql.Data.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Buffers.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Memory.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Zstandard.Net.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\AngleSharp.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\AutoFixture.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\AutoFixture.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\ControlzEx.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Fare.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MySql.Data.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Buffers.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Memory.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Authorization.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Club.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\FoodCard.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\MainFood.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\MainWindow.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\OrderBox.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Styles.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\App.baml
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Authorization.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Club.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\FoodCard.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\MainFood.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\OrderBox.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.cache
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.lref
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Branirovanie.g.resources
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Branirovanie.Properties.Resources.resources
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CopyComplete
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Branirovanie.exe
+C:\Users\Admin\source\repos\Branirovanie\Branirovanie\obj\Debug\Branirovanie.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe.config
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Branirovanie.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\AngleSharp.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\AutoFixture.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\ControlzEx.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Fare.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Memory.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Zstandard.Net.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\AngleSharp.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\AutoFixture.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\AutoFixture.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\ControlzEx.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Fare.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MySql.Data.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Memory.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Authorization.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Club.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\FoodCard.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\MainFood.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\OrderBox.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.cache
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.lref
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\App.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Authorization.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Club.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\FoodCard.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\MainFood.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\OrderBox.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Styles.baml
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Branirovanie.g.resources
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Branirovanie.Properties.Resources.resources
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CopyComplete
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Branirovanie.exe
+C:\Users\Admin\Desktop\Диплом\Branirovanie\Branirovanie\obj\Debug\Branirovanie.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Authorization.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Club.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\FoodCard.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\MainFood.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\OrderBox.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.cache
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.lref
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\App.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Authorization.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Club.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\FoodCard.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\MainFood.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\OrderBox.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Styles.baml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Branirovanie.g.resources
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Branirovanie.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe.config
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Branirovanie.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\AngleSharp.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\AutoFixture.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\ControlzEx.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Fare.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Memory.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Zstandard.Net.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\AngleSharp.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\AutoFixture.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\AutoFixture.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\ControlzEx.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Fare.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MySql.Data.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Memory.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Branirovanie.Properties.Resources.resources
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CopyComplete
+C:\Users\Admin\Desktop\колледж\с флешки\актуал\приложение\Branirovanie\Branirovanie\obj\Debug\Branirovanie.exe
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe.config
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Branirovanie.exe
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Branirovanie.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\AngleSharp.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\AutoFixture.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\ControlzEx.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Fare.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Memory.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\AngleSharp.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\AutoFixture.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\AutoFixture.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\ControlzEx.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Fare.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Google.Protobuf.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MySql.Data.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\MySqlConnector.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\Renci.SshNet.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Memory.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Authorization.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Club.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\FoodCard.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\MainFood.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\OrderBox.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.cache
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.lref
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\App.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Authorization.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Club.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\FoodCard.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\FoodOrderedCard.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\MainFood.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\MessageBoxUC.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\OrderBox.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\RestaurantCard.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Styles.baml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Branirovanie.g.resources
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Branirovanie.Properties.Resources.resources
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CopyComplete
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Branirovanie.exe
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\Branirovanie.pdb
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\ZstdNet.dll
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Admin\Desktop\Branirovanie\Branirovanie\obj\Debug\BranirovaniеActual.csproj.AssemblyReference.cache
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Branirovanie.exe.config
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Branirovanie.exe
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Branirovanie.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\AngleSharp.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\AutoFixture.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\BouncyCastle.Crypto.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\ControlzEx.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Fare.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Google.Protobuf.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\K4os.Compression.LZ4.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\K4os.Hash.xxHash.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MahApps.Metro.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MaterialDesignColors.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MySql.Data.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MySqlConnector.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Newtonsoft.Json.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Renci.SshNet.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Buffers.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Memory.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Numerics.Vectors.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Ubiety.Dns.Core.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\ZstdNet.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\AngleSharp.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\AutoFixture.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\AutoFixture.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\BouncyCastle.Crypto.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\ControlzEx.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\ControlzEx.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Fare.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Google.Protobuf.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Google.Protobuf.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\K4os.Compression.LZ4.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\K4os.Hash.xxHash.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MahApps.Metro.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MahApps.Metro.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MaterialDesignColors.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MySql.Data.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\MySqlConnector.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Newtonsoft.Json.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\Renci.SshNet.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Buffers.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Memory.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Numerics.Vectors.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\bin\Debug\de\MahApps.Metro.resources.dll
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\BranirovaniеActual.csproj.AssemblyReference.cache
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\BranirovaniеActual.csproj.SuggestedBindingRedirects.cache
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Authorization.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Club.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\FoodCard.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\FoodOrderedCard.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\MainFood.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\MainWindow.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\MessageBoxUC.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\OrderBox.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\RestaurantCard.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\App.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.cache
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Branirovanie_MarkupCompile.lref
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\App.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Authorization.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Club.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\FoodCard.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\FoodOrderedCard.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\MainFood.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\MainWindow.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\MessageBoxUC.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\OrderBox.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\RestaurantCard.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Styles.baml
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Branirovanie.g.resources
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Branirovanie.Properties.Resources.resources
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\BranirovaniеActual.csproj.GenerateResource.cache
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CoreCompileInputs.cache
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\BranirovaniеActual.csproj.CopyComplete
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Branirovanie.exe
+D:\гитхаб(потенциально)\Branirovanie — копия (2)\Branirovanie\obj\Debug\Branirovanie.pdb
