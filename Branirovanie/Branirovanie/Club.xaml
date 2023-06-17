@@ -1,0 +1,327 @@
+﻿<Window x:Class="Branirovanie.Club"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      
+
+        xmlns:local="clr-namespace:Branirovanie"
+        
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="800" Width="370" 
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     FontFamily="{DynamicResource MaterialDesignFont}" Foreground="#DDFFFFFF"
+         MinHeight="800"
+        MaxHeight="800"
+        MaxWidth="370"
+        MinWidth="370"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        >
+    <Grid Width="370">
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFFFCEB3" Offset="0"/>
+                <GradientStop Color="#7FFFC4A2" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+            <Button
+                Background="Red"
+                Margin="307,0,0,0"
+                Height="25"
+  Content="{materialDesign:PackIcon Close}"
+  ToolTip="Icon" Click="Close_Button_Click" />
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" />
+
+        <StackPanel Grid.Row="1" >
+            <Grid x:Name="mainGrid">
+
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Foreground="Black" Text="ADMIN" Margin="10,433,282,430" FontWeight="Bold" FontFamily="Anita  Semi-square"/>
+                <Border BorderBrush="DarkGray" BorderThickness="2,0,0,0" Margin="202,58,136,534"/>
+                <Border BorderBrush="DarkGray" BorderThickness="2,0,0,0" Margin="160,58,188,534"/>
+                <Border BorderBrush="DarkGray" BorderThickness="0,2,0,0" Margin="75,26,79,842"/>
+                <Border BorderBrush="DarkGray" BorderThickness="0,0,2,0" Margin="311,287,47,541"/>
+                <ToggleButton 
+                    Background="Transparent"
+                    Foreground="Green"
+                   
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="4"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="56,176,0,692" HorizontalAlignment="Left" RenderTransformOrigin="0.438,0.5" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="5"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,324,0,544" HorizontalAlignment="Left" FontFamily="Anita  Semi-square"  />
+                <ToggleButton Background="Transparent"  Foreground="Green" 
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="3"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="56,213,0,655" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="2"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="56,287,0,581" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="10"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,139,0,729" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="9"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,176,0,692" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="8"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,213,0,655" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="1"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="56,324,0,544" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="7"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,250,0,618" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="6"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,287,0,581" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="28"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,26,0,842" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="27"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="239,26,0,842" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="20"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="205,65,0,803" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="19"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,102,0,766" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="18"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,139,0,729" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="11"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,102,0,766" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="12"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,65,0,803" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="31"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="91,26,0,842" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                  
+                    Content="30"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="128,26,0,842" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="29"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="165,26,0,842" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="17"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,176,0,692" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="16"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,213,0,655" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="15"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,250,0,618" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="14"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,287,0,581" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="22"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="274,287,0,581" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="21"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="274,323,0,545" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="24"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="274,172,0,696" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="23"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="274,213,0,655" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="26"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="274,65,0,803" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                  
+                    Content="25"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="274,102,0,766" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="13"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="202,324,0,544" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+
+                <ProgressBar
+  Orientation="Vertical"
+  Value="100" Margin="-102,540,102,-800"
+  Foreground="Blue"/>
+                <ProgressBar
+  Orientation="Vertical"
+  Value="100" Margin="80,540,-120,-800"
+  Foreground="Red"/>
+
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                  
+                    Content="36"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="31,541,0,327" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                  
+                    Content="35"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="31,578,0,290" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="34"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="31,615,0,253" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="33"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="31,652,0,216" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="32"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="31,689,0,179" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+
+
+
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="41"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="304,541,0,327" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="40"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="304,578,0,290" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="39"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="304,615,0,253" HorizontalAlignment="Left" RenderTransformOrigin="0.562,0.469" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                   
+                    Content="38"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="304,652,0,216" HorizontalAlignment="Left" FontFamily="Anita  Semi-square" />
+                <ToggleButton Background="Transparent" Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    
+                    Content="37"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="304,689,0,179" HorizontalAlignment="Left" FontFamily="Anita  Semi-square"  />
+
+
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    ToolTip="ps1"
+                    Visibility="Collapsed"
+                    Content="{materialDesign:PackIcon Kind=SonyPlaystation}"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="304,413,0,455" HorizontalAlignment="Left" />
+                <ToggleButton Background="Transparent"  Foreground="Green"
+                    Style="{StaticResource MaterialDesignActionToggleButton}"
+                    ToolTip="ps2"
+                    Visibility="Collapsed"
+                    Content="{materialDesign:PackIcon Kind=SonyPlaystation}"
+                    materialDesign:ToggleButtonAssist.OnContent="{materialDesign:PackIcon Kind=CheckboxMarkedCircleOutline}" Margin="304,462,0,406" HorizontalAlignment="Left" />
+                <Border BorderBrush="DarkGray" BorderThickness="0,0,2,0" Margin="311,172,47,656"/>
+                <Border BorderBrush="DarkGray" BorderThickness="0,0,2,0" Margin="311,65,47,763"/>
+                <Border BorderBrush="DarkGray" BorderThickness="2,0,0,0" Margin="56,283,307,545"/>
+                <Border BorderBrush="DarkGray" BorderThickness="2,0,0,0" Margin="56,172,307,656"/>
+
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center" >
+
+            <Grid>
+
+
+                <Button
+                   
+x:Name="club_add_btn"
+Style="{StaticResource MaterialDesignRaisedDarkButton}"
+Width="370"
+HorizontalAlignment="Center"
+ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+Content="Добавить"  
+Height="Auto" 
+Click="club_add_btn_Click" FontFamily="Anita  Semi-square" 
+ 
+   />
+            </Grid>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Center" Margin="26,505,305,0" Grid.Row="1" TextWrapping="Wrap" Text="Vip1" Foreground="Black" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Anita  Semi-square" Width="39" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Center" Margin="300,508,26,0" Grid.Row="1" TextWrapping="Wrap" Text="Vip2" Foreground="Black" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Anita  Semi-square" Width="44" FontSize="16"/>
+    </Grid>
+</Window>

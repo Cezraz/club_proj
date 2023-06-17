@@ -1,0 +1,1781 @@
+﻿<Window x:Class="Branirovanie.MainWindow"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+       
+      
+
+        xmlns:local="clr-namespace:Branirovanie"
+        
+        mc:Ignorable="d"
+        x:Name="Mainindow"
+        Title="MainWindow" Height="450" Width="884.831" 
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     FontFamily="{DynamicResource MaterialDesignFont}" Foreground="#DDFFFFFF"
+        MinHeight="480"
+        MaxHeight="480"
+        MaxWidth="1170"
+        MinWidth="1170"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" MouseLeftButtonDown="Window_MouseLeftButtonDown" 
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Panel.ZIndex="1" x:Name="load"  Visibility="Collapsed">
+
+
+            <Canvas Background="#66000000" Margin="0,0,0,0" x:Name="Load_canvas"/>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ProgressBar
+  Style="{StaticResource MaterialDesignCircularProgressBar}"
+  Value="0"
+  IsIndeterminate="True"
+  Panel.ZIndex="2"/>
+                <TextBlock Text="Подождите программа загружается..." FontSize="18" Foreground="White" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <materialDesign:ColorZone
+  Width="1170"
+  Mode="Inverted"
+  Padding="16" 
+  Background="#FF512DA8" OpacityMask="Black">
+                <DockPanel>
+                    <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                        <TextBlock Text="Тёмная тема" Foreground="White"  DockPanel.Dock="Right" VerticalAlignment="Center"/>
+                        <ToggleButton
+  Style="{StaticResource MaterialDesignSwitchLightToggleButton}"
+  ToolTip="Сменить тему"
+  Width="40"                         
+  Height="20"
+  x:Name="Theme_tg"
+  IsChecked="False" Click="ToggleButton_Click" />
+
+                       
+                        <Button
+                        x:Name="change_acc"
+                        DockPanel.Dock="Right"
+                        Content="{materialDesign:PackIcon AccountConvert}"
+                        Background="White"
+                        Foreground="#FF673AB7" Click="change_acc_Click"
+                        />
+
+
+
+                        <Button
+                        x:Name="Close"
+                        DockPanel.Dock="Right"
+                        Content="{materialDesign:PackIcon Close}"
+                        Background="Red" Click="Close_Button_Click"/>
+                    </StackPanel>
+
+
+
+
+                    <StackPanel
+      Orientation="Horizontal">
+                        <ToggleButton
+        Style="{DynamicResource MaterialDesignHamburgerToggleButton}"
+                            x:Name="menuTogle" Click="menuTogle_Click"/>
+                        <TextBlock
+        VerticalAlignment="Center"
+        Margin="16 0 0 0"
+        Foreground="White"
+        Text="Элетронный стол заказов компьютерного клуба" FontWeight="Bold" FontSize="24" FontFamily="Calibri" />
+                    </StackPanel>
+                </DockPanel>
+            </materialDesign:ColorZone>
+
+        </StackPanel>
+
+        <TabControl 
+  Grid.Row="1" 
+  x:Name="tabcon"
+  Style="{StaticResource MaterialDesignNavigatilRailTabControl}"
+  materialDesign:ColorZoneAssist.Mode="PrimaryDark" >
+
+            <TabItem
+    Header="{materialDesign:PackIcon Kind=PlusBox, Size=24}"
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}"
+    
+   >
+                <Grid x:Name="ti1_grid">
+                    <!--<TextBlock>
+      <Run
+        Text="tab 1 content. Default look and behaviors." />
+      <LineBreak />
+      <LineBreak />
+      <Run
+        FontStyle="Italic">
+          
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+    </Run>
+                </TextBlock>-->
+                    <DatePicker
+                        
+  x:Name="date_pick"
+  materialDesign:HintAssist.Hint="Выберите дату*"
+  Style="{StaticResource MaterialDesignOutlinedDatePicker}" 
+   Margin="23,10,666,320"
+   VerticalAlignment="Stretch"
+   materialDesign:TextFieldAssist.HasClearButton="True"/>
+
+
+                    <materialDesign:TimePicker
+ x:Name="start_pick"
+  Style="{StaticResource MaterialDesignOutlinedTimePicker}"
+   materialDesign:TextFieldAssist.HasClearButton="True"
+   Is24Hours="True"
+  materialDesign:HintAssist.Hint="Начало*" 
+   
+  Margin="547,10,328,325" 
+  VerticalAlignment="Stretch" LostFocus="start_pick_LostFocus" IsInvalidTextAllowed="True" />
+
+
+                    <materialDesign:TimePicker
+ x:Name="end_pick"
+ Style="{StaticResource MaterialDesignOutlinedTimePicker}"
+ materialDesign:HintAssist.Hint="Конец*"  
+ Is24Hours="True"
+ 
+ Margin="829,10,46,325" 
+ VerticalAlignment="Stretch" 
+ materialDesign:TextFieldAssist.HasClearButton="True" LostFocus="end_pick_LostFocus" IsInvalidTextAllowed="True"/>
+
+
+
+                    <!--<TextBox x:Name="Name" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Name" DataContext="{Binding Person}">
+                    <TextBox.Text>
+                        <Binding Path="Name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay" ValidatesOnDataErrors="True" TargetNullValue="{x:Static sys:String.Empty}">
+                            <Binding.ValidationRules>
+                                <domain:NotEmptyValidationRule ValidationStep="UpdatedValue" />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+           
+                </TextBox>-->
+
+
+
+
+
+                    <TextBox
+  x:Name="Name"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+  Text=""
+  VerticalAlignment="Center"
+  materialDesign:TextFieldAssist.HasClearButton="True"
+  materialDesign:TextFieldAssist.PrefixText="Ф.И.О"
+  Height="78"
+  Margin="23,101,681,233" KeyUp="Name_KeyUp">
+
+                        <!--materialDesign:TextFieldAssist.SuffixText="mm"-->
+
+                        <materialDesign:HintAssist.Hint>
+                            <StackPanel
+ Orientation="Horizontal"
+ Margin="-2 0 0 0">
+                                <materialDesign:PackIcon
+ Kind="Account" />
+                                <TextBlock
+ Text="Имя клиента*" />
+                            </StackPanel>
+                        </materialDesign:HintAssist.Hint>
+                    </TextBox>
+
+
+
+                    <TextBox
+                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
+  x:Name="Key_word"
+  TextWrapping="Wrap"
+  VerticalAlignment="Stretch"
+  HorizontalAlignment="Right"
+  AcceptsReturn="True"
+  VerticalScrollBarVisibility="Auto"
+  SpellCheck.IsEnabled="True"
+  IsEnabled="False"
+  materialDesign:HintAssist.Hint="Подсказка"
+  Text="Номера компьютеров следует указывать через запятую, без пробелов; либо указывать диапазон компьютеров через '-'; либо использовать условыне обозначения зон, такие как 'vip1' и 'vip2'.
+                        " 
+   Margin="484,184,10,105" />
+
+
+                    <TextBox
+  x:Name="Phone"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+  Text=""
+  VerticalAlignment="Center"
+  materialDesign:TextFieldAssist.HasClearButton="True"
+  materialDesign:TextFieldAssist.PrefixText=""
+   Height="78"
+   Margin="23,184,681,150" KeyUp="Phone_KeyUp">
+                        <!--materialDesign:TextFieldAssist.SuffixText="mm"-->
+
+                        <materialDesign:HintAssist.Hint>
+                            <StackPanel
+      Orientation="Horizontal"
+      Margin="-2 0 0 0">
+                                <materialDesign:PackIcon
+        Kind="Phone" />
+                                <TextBlock
+        Text="Как связаться*" />
+                            </StackPanel>
+                        </materialDesign:HintAssist.Hint>
+                    </TextBox>
+
+
+
+                    <StackPanel Margin="23,267,434,10">
+                        <CheckBox
+    x:Name="MaterialDesignOutlinedTextBoxEnabledComboBox"
+    Content="Оставить комментарий" Height="45" Margin="0,0,-68,0" />
+                        <TextBox
+    x:Name="Comment"
+    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+    materialDesign:TextFieldAssist.HasClearButton="True"
+    VerticalAlignment="Top"
+    Height="80"
+                            
+                 
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    VerticalScrollBarVisibility="Auto"
+    materialDesign:HintAssist.Hint="Коммент"
+    IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}" Margin="0,0,-68,0" />
+                    </StackPanel>
+
+
+
+
+                    <ComboBox Style="{StaticResource MaterialDesignFilledComboBox}"
+  x:Name="Pack_box"
+  materialDesign:HintAssist.Hint="Пакет"
+  materialDesign:HintAssist.HintOpacity=".26" 
+  IsEditable="False" 
+  Margin="547,101,333,244" DropDownClosed="Pack_box_DropDownClosed"
+  >
+                        <ComboBoxItem
+    Content="День" />
+                        <ComboBoxItem
+    Content="Вечер" />
+                        <ComboBoxItem
+    Content="Ночь" />
+
+                    </ComboBox>
+
+
+                    <Button
+  Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
+  ToolTip="Карта компьютерного клуба" 
+   HorizontalAlignment="Right"
+  Margin="731,101,7,242" 
+  Height="60" 
+  Width="60" 
+  Click="MapButton_Click"
+  x:Name="map_btn"
+  >
+                        <materialDesign:PackIcon
+    Kind="Lan"
+    Height="30"
+    Width="30" />
+                    </Button>
+                    <TextBox
+  x:Name="pc_field"
+  materialDesign:HintAssist.Hint="Номера ПК*"
+  materialDesign:HintAssist.HelperText=""
+  
+ Margin="829,106,81,244" KeyUp="pc_field_KeyUp">
+
+                    </TextBox>
+                    <Button
+  x:Name="add_btn"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  Width="200"
+  HorizontalAlignment="Right"
+  ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+  Content="Добавить" Margin="559,341,46,22" Height="Auto" Click="Add_Button_Click"
+   />
+                    
+
+                </Grid>
+            </TabItem>
+            <TabItem
+    Header="{materialDesign:PackIcon Kind=TableMultiple, Size=24}"
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}" Loaded="TabItem_Loaded" 
+                 >
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <DatePicker
+                        
+  x:Name="table_date_pick"
+  materialDesign:HintAssist.Hint="Выберите дату"
+  Style="{StaticResource MaterialDesignOutlinedDatePicker}" 
+   Grid.Row="0"
+   VerticalAlignment="Stretch"
+   materialDesign:TextFieldAssist.HasClearButton="True"/>
+                    <StackPanel Margin="15,0,0,0" Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                        <Grid x:Name="handle_grid" HorizontalAlignment="Center"  />
+                    </StackPanel>
+                    <ScrollViewer  
+ VerticalScrollBarVisibility="Visible" 
+  HorizontalScrollBarVisibility="Visible"                      
+ Grid.Row="2" 
+ Margin="15,0,0,0"                       
+ PreviewMouseWheel="ScrollViewer_PreviewMouseWheel"
+ x:Name="scroll">
+                        <StackPanel x:Name="ti2Stack" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Stretch">
+
+                            
+                            <Grid x:Name="tabl_grid"/>
+
+
+
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+
+
+
+
+            <TabItem
+    Header="{materialDesign:PackIcon Kind=AccountTieVoice, Size=24}"
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}"
+    x:Name="about_item"
+   
+    Visibility="Visible" Loaded="clientOrder_item_Loaded" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock 
+                            Text="Бронирование"
+                            FontSize="26" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center"
+                            Foreground="#FF673AB7" FontWeight="Bold"
+                            />
+                        <DataGrid
+Grid.Row="1"
+x:Name="client_dgv"
+CanUserSortColumns="False"
+IsReadOnly="False"
+CanUserAddRows="False"
+IsEnabled="True"
+AutoGenerateColumns="False"
+ItemsSource="{Binding Items}"
+SelectionUnit="Cell"
+SelectionMode="Extended"
+FontSize="12"
+HeadersVisibility="Column" 
+EnableColumnVirtualization="True"  >
+
+                            <DataGrid.Columns>
+                                <DataGridCheckBoxColumn
+      Binding="{Binding selected, UpdateSourceTrigger=PropertyChanged}"
+      ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}"
+      IsReadOnly="False"
+      
+                                Width="48"
+      >
+
+                                    <DataGridCheckBoxColumn.Header>
+                                        <Border
+          Background="Transparent">
+                                            <CheckBox
+             />
+                                        </Border>
+                                    </DataGridCheckBoxColumn.Header>
+                                    <DataGridCheckBoxColumn.HeaderStyle>
+                                        <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                            <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                        </Style>
+                                    </DataGridCheckBoxColumn.HeaderStyle>
+                                </DataGridCheckBoxColumn>
+
+
+                                <materialDesign:DataGridTextColumn
+      Binding="{Binding date}"
+      Header="Дата"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                    <DataGridTextColumn.HeaderStyle>
+                                        <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                            <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                            <Setter
+            Property="ContentTemplate">
+                                                <Setter.Value>
+                                                    <DataTemplate>
+                                                        <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                    </DataTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DataGridTextColumn.HeaderStyle>
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                            <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </materialDesign:DataGridTextColumn>
+
+                                <materialDesign:DataGridTextColumn
+      Binding="{Binding start_time}"
+      Header="Время начала"
+      Width="80"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                    <DataGridTextColumn.HeaderStyle>
+                                        <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                            <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                            <Setter
+            Property="ContentTemplate">
+                                                <Setter.Value>
+                                                    <DataTemplate>
+                                                        <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                    </DataTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DataGridTextColumn.HeaderStyle>
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                            <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </materialDesign:DataGridTextColumn>
+
+                                <materialDesign:DataGridTextColumn
+      Binding="{Binding end_time}"
+      Header="Время окончания"
+      Width="94"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                    <DataGridTextColumn.HeaderStyle>
+                                        <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                            <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                            <Setter
+            Property="ContentTemplate">
+                                                <Setter.Value>
+                                                    <DataTemplate>
+                                                        <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                    </DataTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DataGridTextColumn.HeaderStyle>
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                            <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </materialDesign:DataGridTextColumn>
+
+                                <materialDesign:DataGridTextColumn
+      Binding="{Binding idClient}"
+      Header="Клиент"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                    <DataGridTextColumn.HeaderStyle>
+                                        <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                            <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                            <Setter
+            Property="ContentTemplate">
+                                                <Setter.Value>
+                                                    <DataTemplate>
+                                                        <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                    </DataTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DataGridTextColumn.HeaderStyle>
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                            <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </materialDesign:DataGridTextColumn>
+
+
+                                <materialDesign:DataGridTextColumn
+      Binding="{Binding pcRange}"
+      Header="Номера ПК"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                    <DataGridTextColumn.HeaderStyle>
+                                        <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                            <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                            <Setter
+            Property="ContentTemplate">
+                                                <Setter.Value>
+                                                    <DataTemplate>
+                                                        <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                    </DataTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DataGridTextColumn.HeaderStyle>
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                            <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </materialDesign:DataGridTextColumn>
+
+
+                                <materialDesign:DataGridTextColumn
+      Binding="{Binding comment}"
+      Header="Комментарий"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                    <DataGridTextColumn.HeaderStyle>
+                                        <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                            <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                            <Setter
+            Property="ContentTemplate">
+                                                <Setter.Value>
+                                                    <DataTemplate>
+                                                        <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                    </DataTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DataGridTextColumn.HeaderStyle>
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                            <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </materialDesign:DataGridTextColumn>
+
+
+
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        
+                        <StackPanel Grid.Row="2" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" >
+                            <Button
+  Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"
+  ToolTip="Обновить данные"
+  HorizontalAlignment="Left"
+  Margin="-50,0,0,0"
+  VerticalAlignment="Center"
+  x:Name="Refresh_clientOrder_buttton" 
+  Click="Refresh_clientOrder_buttton_Click"  >
+                                <materialDesign:PackIcon
+    Kind="Refresh"
+    Height="18"
+    Width="18" />
+                            </Button>
+                            <Button
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  Width="200"
+  VerticalAlignment="Center"
+  ToolTip="Удалить"
+  Content="Удалить отмеченное"
+   Margin="0,0,20,0"                             
+  x:Name="Delete_clientOrder_button" Click="Delete_clientOrder_button_Click" />
+                            <Button
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  Width="200"
+  VerticalAlignment="Center"
+  ToolTip="Добавить"
+  Content="Добавить отмеченное"
+  x:Name="Add_clientOrder_button" Click="Add_clientOrder_button_Click"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0"  
+                             Text="Рестораны"
+                            FontSize="26" 
+                             x:Name="rest_header"
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center"
+                            Margin="50,0,0,0"
+                            Foreground="#FF673AB7" 
+                            FontWeight="Bold" />
+                        <TabControl
+                            Grid.Row="1"
+                            Margin="10,0,0,0"
+                            x:Name="Restoraunts"
+  Style="{StaticResource MaterialDesignNavigatilRailTabControl}" 
+                            Loaded="TabControl_Loaded" MouseUp="Restoraunts_MouseUp">
+                            <TabItem
+   
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+
+                                <TabItem.Header>
+                                    <TextBlock Text="Общее" FontSize="12" Foreground="White"/>
+
+                                </TabItem.Header>
+                                <DataGrid
+ x:Name="FoodOrder"
+CanUserSortColumns="False"
+IsReadOnly="False"
+CanUserAddRows="False"
+IsEnabled="True"
+AutoGenerateColumns="False"
+ItemsSource="{Binding FoodOrderClass}"
+SelectionUnit="Cell"
+SelectionMode="Extended"
+FontSize="12"
+HeadersVisibility="Column" 
+EnableColumnVirtualization="True"  >
+
+                                    <DataGrid.Columns>
+                                        <DataGridCheckBoxColumn
+      Binding="{Binding selected, UpdateSourceTrigger=PropertyChanged}"
+      ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}"
+      IsReadOnly="False"
+      
+                                Width="48"
+      >
+
+                                            <DataGridCheckBoxColumn.Header>
+                                                <Border
+          Background="Transparent">
+                                                    <CheckBox
+             />
+                                                </Border>
+                                            </DataGridCheckBoxColumn.Header>
+                                            <DataGridCheckBoxColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridCheckBoxColumn.HeaderStyle>
+                                        </DataGridCheckBoxColumn>
+
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding id}"
+      Header="№"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding }"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding total}"
+      Header="Стоимоть заказа"
+      Width="auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding customerName}"
+      Header="Заказчик"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                        </DataGrid.Columns>
+                                </DataGrid>
+                            </TabItem>
+                            <TabItem
+   
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                               
+                                <TabItem.Header>
+                                    <Image Source="Resources/images/restaurants/presto.jpg" />
+                                </TabItem.Header>
+
+                                <DataGrid
+ x:Name="Presto"
+CanUserSortColumns="False"
+IsReadOnly="False"
+CanUserAddRows="False"
+IsEnabled="True"
+AutoGenerateColumns="False"
+ItemsSource="{Binding RestouranOrder}"
+SelectionUnit="Cell"
+SelectionMode="Extended"
+FontSize="12"
+HeadersVisibility="Column" 
+EnableColumnVirtualization="True"  >
+
+                                    <DataGrid.Columns>
+                                        
+
+
+                                        
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding idOrder}"
+      Header="№ Заказа"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding }"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding foodName}"
+      Header="Название продукта"
+      Width="auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding price}"
+      Header="Цена"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding count}"
+      Header="Количество"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </TabItem>
+                            <TabItem
+                                
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                         
+                                <TabItem.Header>
+                                    <Image Source="Resources/images/restaurants/Verona.png" />
+                                </TabItem.Header>
+                                <DataGrid
+ x:Name="Verona"
+CanUserSortColumns="False"
+IsReadOnly="False"
+CanUserAddRows="False"
+IsEnabled="True"
+AutoGenerateColumns="False"
+ItemsSource="{Binding RestouranOrder}"
+SelectionUnit="Cell"
+SelectionMode="Extended"
+FontSize="12"
+HeadersVisibility="Column" 
+EnableColumnVirtualization="True"  >
+
+                                    <DataGrid.Columns>
+
+
+
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding idOrder}"
+      Header="№ Заказа"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding }"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding foodName}"
+      Header="Название продукта"
+      Width="auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding price}"
+      Header="Цена"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding count}"
+      Header="Количество"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </TabItem>
+                            <TabItem
+                                
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+
+                                <TabItem.Header>
+                                    <Image Source="Resources/images/restaurants/Subway.png" />
+                                </TabItem.Header>
+                                <DataGrid
+ x:Name="Subway"
+CanUserSortColumns="False"
+IsReadOnly="False"
+CanUserAddRows="False"
+IsEnabled="True"
+AutoGenerateColumns="False"
+ItemsSource="{Binding RestouranOrder}"
+SelectionUnit="Cell"
+SelectionMode="Extended"
+FontSize="12"
+HeadersVisibility="Column" 
+EnableColumnVirtualization="True"  >
+
+                                    <DataGrid.Columns>
+
+
+
+                                        
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding idOrder}"
+      Header="№ Заказа"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding }"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding foodName}"
+      Header="Название продукта"
+      Width="auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding price}"
+      Header="Цена"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding count}"
+      Header="Количество"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </TabItem>
+                            <TabItem
+                                
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+
+                                <TabItem.Header>
+                                    <Image Source="Resources/images/restaurants/Yakida.png" />
+                                </TabItem.Header>
+                                <DataGrid
+ x:Name="Yakida"
+CanUserSortColumns="False"
+IsReadOnly="False"
+CanUserAddRows="False"
+IsEnabled="True"
+AutoGenerateColumns="False"
+ItemsSource="{Binding RestouranOrder}"
+SelectionUnit="Cell"
+SelectionMode="Extended"
+FontSize="12"
+HeadersVisibility="Column" 
+EnableColumnVirtualization="True"  >
+
+                                    <DataGrid.Columns>
+
+
+
+                                       
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding idOrder}"
+      Header="№ Заказа"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding }"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding foodName}"
+      Header="Название продукта"
+      Width="auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding price}"
+      Header="Цена"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                        <materialDesign:DataGridTextColumn
+      Binding="{Binding count}"
+      Header="Количество"
+      Width="Auto"
+      IsReadOnly="True"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                                            <DataGridTextColumn.HeaderStyle>
+                                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                                    <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+                                                    <Setter
+            Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                  TextWrapping="Wrap"
+                  Text="{Binding}"
+                  TextAlignment="Center" />
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </DataGridTextColumn.HeaderStyle>
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style
+          TargetType="{x:Type TextBlock}"
+          BasedOn="{StaticResource MaterialDesignDataGridTextColumnStyle}">
+                                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </materialDesign:DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                               
+                            </TabItem>
+                        </TabControl>
+                        <StackPanel Grid.Row="2" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" >
+                            <Button
+  Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"
+  ToolTip="Обновить данные"
+  HorizontalAlignment="Left"
+  Margin="-50,0,0,0"
+  VerticalAlignment="Center"
+  x:Name="Refresh_foodOrder_buttton" Click="Refresh_foodOrder_buttton_Click" 
+    >
+                                <materialDesign:PackIcon
+    Kind="Refresh"
+    Height="18"
+    Width="18" />
+                            </Button>
+                            <Button
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  Width="200"
+  VerticalAlignment="Center"
+  Margin="0,0,10,0"
+  ToolTip="Добавить"
+  Content="Удалить отмеченное"
+  x:Name="Add_foodOrder_button" Click="Delete_foodOrder_button_Click" />
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+
+                <!--<TextBox
+    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+    VerticalAlignment="Center"
+    TextAlignment="Center"
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    IsReadOnly="True"                    
+    VerticalScrollBarVisibility="Auto"
+    Text="тут должен распологаться текст о программе"
+    IsEnabled="True" Height="413" />-->
+
+
+
+
+                <!--<StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right">
+                        <Grid>
+                            <materialDesign:Badged
+  Badge="aaaa"
+  BadgeColorZoneMode="Dark">
+                                <Button
+    Content="STATUS"
+    HorizontalAlignment="Left" Click="Button_Click"
+                       />
+                            </materialDesign:Badged>
+
+
+                            <Button
+                        
+  Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"
+  ToolTip="MaterialDesignFloatingActionMiniDarkButton">
+                                <materialDesign:PackIcon
+    Kind="Refresh"
+     />
+                            </Button>
+
+                        </Grid>
+                        
+                            
+                     
+                          
+                        
+                      
+
+                    </StackPanel>-->
+
+
+            </TabItem>
+            <TabItem
+    Header="{materialDesign:PackIcon Kind=Food, Size=24}"
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}"
+    x:Name="food_item"
+    Visibility="Visible"            >
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="130"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="В этом разделе можно заказать продукты питания из разных ресторанов в компьютерный клуб. После того как заказ будет сформирован он будет передан администратору для подтверждения." 
+                               Grid.Row="0"
+                               FontSize="26" 
+                               Height="auto"
+                               TextAlignment="Center"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="Доступные рестораны:" 
+                               Grid.Row="1"
+                               FontSize="26" 
+                               Height="auto"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Margin="0,0,0,0"/>
+                    <StackPanel Orientation="Horizontal" Grid.Row="2">
+                        <Image Source="Resources/images/restaurants/presto.jpg" Margin="170,0,0,0"/>
+                        <Image Source="Resources/images/restaurants/subway.png" Margin="100,0,0,0"/>
+                        <Image Source="Resources/images/restaurants/verona.png" Margin="100,0,0,0"/>
+                        <Image Source="Resources/images/restaurants/yakida.png" Margin="100,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="3">
+                        <TextBlock Text="Престо" Margin="190,0,0,0" FontSize="26" VerticalAlignment="Center"/>
+                        <TextBlock Text="Subway" Margin="140,0,0,0" FontSize="26" VerticalAlignment="Center"/>
+                        <TextBlock Text="Верона" Margin="135,0,0,0" FontSize="26" VerticalAlignment="Center"/>
+                        <TextBlock Text="Якида" Margin="146,0,0,0" FontSize="26" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <Grid
+   Grid.Row="4"
+   VerticalAlignment="Top">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="41*"/>
+                            <RowDefinition Height="62*"/>
+                        </Grid.RowDefinitions>
+
+                        <Button
+                            
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    VerticalAlignment="Center"
+    materialDesign:ButtonAssist.CornerRadius="5"
+    FontSize="20"
+    Width="500"
+    ToolTip="Заказать еду" 
+    Margin="0,0,0,0" 
+    Grid.Row="1" 
+    Click="Button_Click">
+                            <TextBlock
+     Text="Заказать" />
+                        </Button>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <TabItem
+    Header="{materialDesign:PackIcon Kind=InformationCircle, Size=24}"
+    Style="{StaticResource MaterialDesignNavigationRailTabItem}"
+    x:Name="information_item"
+    Visibility="Visible"  
+    >
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        
+
+                        <materialDesign:PackIcon
+    Kind="InformationOutline"
+    Height="90"
+    Width="90"
+    Margin="0,0,30,0" 
+    />
+
+                        <TextBlock
+  Style="{StaticResource MaterialDesignHeadline4TextBlock}"
+  Text="Электронный стол заказов компьютерного клуба v 1.0" 
+ VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock
+  Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+  HorizontalAlignment="Center"
+  VerticalAlignment="Top"
+  Margin="0,0,0,90"
+  Text="Данное приложение является дипломным проектом, разработанным для ТФ «Морсервис»" />
+                        <TextBlock
+  Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+  TextWrapping="Wrap"
+  HorizontalAlignment="Center"
+  VerticalAlignment="Center"
+                            TextAlignment="Center"
+  Margin="23,-30,20,90"
+  Text="Приложение обеспечивает автоматизацию процесса обработки заказов на бронирование мест в компьютерном клубе и заказов на доставку продуктов питания " />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+           
+
+        </TabControl>
+    </Grid>
+</Window>
